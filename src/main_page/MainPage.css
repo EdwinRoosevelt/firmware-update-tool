@@ -1,0 +1,106 @@
+@font-face {
+	font-family: "AndesNeue";
+	src: local("Andes Neue Alt 3 Bold"), local("Andes-Neue-Alt-3-Bold"),
+		url("../assets/fonts/AndesNeueAlt3-Bold.woff2") format("woff2"),
+		url("../assets/fonts/AndesNeueAlt3-Bold.woff") format("woff"),
+		url("../assets/fonts/AndesNeueAlt3-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+.main-container {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../assets/main-bg.png");
+	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-pic {
+	position: absolute;
+	right: 9rem;
+	width: 35rem;
+	/* width: 40%; */
+	/* background-image: url("../assets/main-banner-pic.png"); */
+}
+
+.left-col {
+	/* width: 50%; */
+	min-width: 600px;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* gap: 0.5rem; */
+}
+
+.right-col {
+	/* width: 50%; */
+	min-width: 600px;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* gap: 0.5rem; */
+}
+
+.heading-text {
+	font-size: 4.5rem;
+	font-family: "AndesNeue";
+	margin-bottom: 2rem;
+}
+
+.main-btn-group {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+button {
+	color: #47b4df;
+	font-weight: bolder;
+	padding: 1rem 6rem;
+	border: solid #47b4df 2px;
+	border-radius: 30px;
+	background-color: transparent;
+
+	box-shadow: 0px 0px 10px rgb(192, 189, 189);
+	cursor: pointer;
+}
+
+.update-btn {
+	color: white;
+	background-color: #47b4df;
+}
+
+.console-box {
+	width: 75%;
+	height: 50px;
+	margin-top: 4rem;
+	resize: None;
+	border: solid rgb(192, 189, 189) 2px;
+	border-radius: 10px;
+	color: white;
+	padding: 1rem;
+	background-color: black;
+}
+
+button:hover {
+	box-shadow: 2px 2px 10px rgb(192, 189, 189);
+}
+
+@media screen and (max-width: 1000px) {
+	.banner-pic,
+	.right-col {
+		display: none;
+	}
+}
